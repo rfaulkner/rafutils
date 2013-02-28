@@ -19,7 +19,7 @@ setup(
     packages=['rafutils',],
     classifiers=[
         'Development Status :: 4 - Beta',
-        'Intended Audience :: Python Developers',
+        'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python',
