@@ -43,13 +43,13 @@ Miscellaneous
 Some miscellaneous methods exposed by this package.
 
 Format Timestamp
-^^^^^^^^^^^^^^^^
+----------------
 
 The ``format_timestamp`` method takes a timestamp representation (string
 or datetime) and convert to a standard string representation.
 
 Enumneration
-^^^^^^^^^^^^
+------------
 
 The ``enum`` method implements an enumeration::
 
@@ -60,7 +60,7 @@ The ``enum`` method implements an enumeration::
     1
 
 Build Named Tuple
-^^^^^^^^^^^^^^^^^
+-----------------
 
 Given a set of types, values, and names builds a named tuple.  This
 method expects three lists all of the same length and returns a
