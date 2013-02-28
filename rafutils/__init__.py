@@ -2,7 +2,7 @@
     Any general purpose utilities useful in the project are defined here.
 """
 
-TIMESTAMP_FORMAT = "%Y%m%d%H%M%S"
+TIMESTAMP_FORMAT = "%Y-%m-%d %H:%M:%S"
 from dateutil.parser import parse as date_parse
 from collections import namedtuple
 
