@@ -48,7 +48,7 @@ Format Timestamp
 The ``format_timestamp`` method takes a timestamp representation (string
 or datetime) and convert to a standard string representation.
 
-Enumneration
+Enumeration
 ------------
 
 The ``enum`` method implements an enumeration::
