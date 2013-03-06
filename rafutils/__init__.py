@@ -4,7 +4,7 @@
 
 TIMESTAMP_FORMAT = "%Y-%m-%d %H:%M:%S"
 from dateutil.parser import parse as date_parse
-from collections import namedtuple
+from collections import namedtuple, OrderedDict
 
 
 def format_timestamp(timestamp_repr):
@@ -68,6 +68,22 @@ def build_namedtuple(names, types, values):
             arg_list.append(str(v))
     return eval('param_type(' + ','.join(arg_list) + ')')
 
+
+def unpack_fields(obj):
+    """
+        Unpacks the values from a named tuple into a dict.  This method
+        expects the '_fields' or 'todict' attribute to exist.  namedtuples
+        expose the fromer interface while recordtypes expose the latter.
+    """
+    d = OrderedDict()
+
+    if hasattr(obj, '_fields'):
+        for field in obj._fields:
+            d[field] = getattr(obj, field)
+    elif hasattr(obj, 'todict'):
+        d = OrderedDict(obj.todict())
+
+    return d
 
 # Rudimentary Testing
 if __name__ == '__main__':

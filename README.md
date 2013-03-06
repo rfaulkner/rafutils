@@ -67,3 +67,10 @@ method expects three lists all of the same length and returns a
 dynamically built namedtuple object.  Currently, only ``list``,
 ``str``, ``int``, and ``float`` cast methods are accepted as members
 of ``types``.  The mothod is named ``build_namedtuple``.
+
+
+Unpack Fields
+-------------
+
+Unpacks the attributes and values of a record type or named tuple into
+an ordered dictionary.
