@@ -8,3 +8,11 @@ Version 0.1.1-dev
 Released on February 28th 2013.
 
 - Initial release
+
+
+Version 0.1.2-dev
+-----------------
+
+Released on March 5th 2013.
+
+- Added method unpack_fields.
